@@ -225,13 +225,101 @@ import random
 
 '''factorial of given Number :'''
 
-import math
-n = int(input("Enter the factorial number :"))
-fact1 = 1
-for n in range( 1 , n +1):
-  fact1 = n * fact1
+# import math
+# n = int(input("Enter the factorial number :"))
+# fact1 = 1
+# for n in range( 1 , n +1):
+#   fact1 = n * fact1
   
-  print(fact1)
+#   print(fact1)
+
+
+'''Reverse a given interger Number :'''
+
+# number = (input("Enter number :")) #
+# rev = (number)[::-1]
+
+# rev1 = number[3 : 6]
+# rev2 = number[-6 : ]
+# rev3 = number[6 : 2 : -1 ]
+
+# print(type(rev))
+# print(rev)
+# print(rev1)
+# print(rev2)
+# print(rev3)
+
+
+'''Write a Python program to:
+
+Take an integer N as input from the user.
+Find the sum of numbers from 1 to N.
+If any number is divisible by 5, skip that number.
+If the sum becomes greater than 300, stop the calculation immediately.
+Print the final sum.
+Do not use a for loop. Solve it using a while loop only.'''
+
+# n = int(input("Enter the number :"))
+
+
+# i = 1
+# total = 0
+# while i <= n :
+#   if i % 5 == 0 :
+#     i += 1
+#     continue
+
+#   total += i 
+#   i += 1 
+#   if total > 300 :
+#     print("the sum is greater than 300 :")
+#     break
+
+  
+
+# print(total)
+
+''' write a program that keeps on accepting a number from the user until the user enters Zero. Display the sum and average of all the numbers :''' 
+
+# n = int(input("Enter the number :"))
+# sum = n
+# for i in range(1 , n) :
+#   if n != 0 :
+#     n = int(input("Enter the number :"))
+#     sum += n
+#     print("Total sum is : " , sum)
+#     avg = sum /( i+1)
+#     print("the average us : " , avg)
+
+#     i+=1 
+#     continue
+
+#   else :
+   
+#     print("you have entered 0 So Exit..")
+#     break
+    
+
+total = 0
+count = 0
+while True :
+  n = int(input("Enter the number :"))
+
+  if n == 0 :
+    break
+
+  total += n
+  count += 1
+  
+    
+
+
+avg = total / count
+
+print("The total is : " , total)
+print("The average is :" , avg)
+
+
 
 
 
