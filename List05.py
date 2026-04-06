@@ -128,7 +128,7 @@ for i in L2 :
 len/min/max/sorted'''
 
 L = [ 1 , 2, 3 ,4 , 5,6]
-print(sorted(L , reverse= True))
+print(sorted(L , reverse= True)) #Sorted temperary short the list
 print(len(L))
 print(min(L))
 print(max(L))
@@ -137,3 +137,96 @@ print(max(L))
 L = [ 1 , 2, 3 ,4 , 5,6]
 L.count(5)
 print(L.count(5))
+
+'''Index '''
+L = [ 1 , 2, 3 ,4 , 5,6]
+L.index(1)
+
+'''Reverse '''
+L = [ 1 , 2, 3 ,4 , 5,6]
+L.reverse() # It reverse the string permanent and it does not create any new list :
+print(L)
+
+
+'''Sort in List '''
+L = [ 1 , 4 ,3 , 8, 5,6,7]
+
+L.sort()
+print(L)
+
+'''Coppyy in List'''
+
+L = [ 1 , 2, 3 ,4 , 5,6]
+L1 = L.copy()
+print(L1)
+
+'''List Comprehension : '''
+
+#newList = [ expression for item in iterable if condition == True]
+''' Add 1 to 10 numbers to a list : '''
+L =  [ [ i for i in range(1 , 11)]]
+print(L)
+
+'''Scalar multiplication on a vector :'''
+
+v = [ 2 , 3, 4]
+s = -3
+L = [ s*i for i in v]
+print(L)
+
+'''Add squars  :'''
+v = [ 2 , 3, 4]
+L = [ i**2 for i in v]
+print(L)
+
+'''print all the numbers dividible y 5 in the range of the 1 to 51'''
+
+L = [ i for i in range(1 , 51) if i % 5 == 0 ]
+print(L)
+'''find the language which start with letter p'''
+languages = [ 'java' , 'python ' , 'php' , 'c ', 'javascript']
+L = [ language for language in languages if language.startswith('p')]
+print(L)
+
+'''Nested if   with List comprehension : '''
+
+basket = [ 'apple', 'guava' , 'cherry ' , 'banana']
+my_fruits  = ['apple' , 'kiwi' , 'grapes '  , 'banana']
+
+L = [fruit for fruit in my_fruits if fruit in basket  if fruit.startswith("a")]
+print(L)
+
+
+'''Print the (3*3) matrix ;'''
+L = [[i*j for i in range(1 ,4)] for j in range( 1 , 4) ]
+print(L , end= " ")
+
+'''Cartesian product -> List comprehension on 2 list together :'''
+
+
+
+L1  = [1 , 2, 3, 4 ]
+L2  = [5 , 6, 7, 8 ]
+L = [ i*j for i in L1  for  j in L2]
+print(L)
+
+'''2 ways to taversal a list : '''
+  # item Wise 
+L  = [1 , 2, 3, 4 ]
+
+for i in range(0 , len(L)):
+  print(L[i] , end= " ")
+
+'''Zip function : '''
+
+L1  = [1 , 2, 3, 4 ]
+L2  = [5 , 6, 7, 8 ]
+L = list(zip(L1 , L2))
+L3 = [i+j for i , j in zip(L1 , L2)] 
+print(L3)
+
+
+''' we can store a built in function in the list  '''
+L = [ 1 , 2 , print , type , input]
+print(L)
+
