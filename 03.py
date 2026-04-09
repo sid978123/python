@@ -405,16 +405,18 @@ s = input("Enter the string :")
 
 # print(result)  
 
-result = ""
-for i in range(len(s)):
-  duplicate = False
-  for j in range(i):
-    if s[i] == s[j]:
-      duplicate = True
-      break
-  if not duplicate :
-    result += s[i]  
+# result = ""
+# for i in range(len(s)):
+#   duplicate = False
+#   for j in range(i):
+#     if s[i] == s[j]:
+#       duplicate = True
+#       break
+#   if not duplicate :
+#     result += s[i]  
   
-print(result)
+# print(result)
+
+
 
 

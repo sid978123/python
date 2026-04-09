@@ -104,4 +104,5 @@ print("".join(["my name is u know me"]))
 
 print('hey u are pretty'.replace('u','is'))
 
-print('dan is dying in the username        ee      '.strip())
+print('dan is dying in the username'.strip())
+

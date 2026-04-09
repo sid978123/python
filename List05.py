@@ -50,9 +50,9 @@ print(L[::-1])
 '''Add the item in the list :'''
 '''APPEND -> it always add only one item in the list '''
 
-# L = [ 1 ,2 ,3 , 4 , 5 ,6,7,8,9]
-# L.append(10)
-# print(L)
+L = [ 1 ,2 ,3 , 4 , 5 ,6,7,8,9]
+L.append(10)
+print(L)
 '''extend : it always add more than one item in the list '''
 L = [ 1,2,3,4,5]
 L.extend([ 6,7,8,9])
