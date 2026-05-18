@@ -164,3 +164,122 @@ print(a)
 
 a =min([ 11 , 22, 44 , 33 , 55 ])
 print(a)
+
+
+
+
+
+
+'''*******************************************************************'''
+
+'''kwargs'''
+def display(**kwargs):
+  for (key , value) in kwargs.items():
+    print(key , value)
+
+
+s=display(india="delhi",pak="islamabad",pakk='Lahore')
+
+
+
+def product(num):
+    if num % 2 == 0 :
+      return "even"
+    else :
+      return "odd"
+
+
+s = product(5)
+print(s)
+
+
+
+
+def market(**num):
+  for (key , value) in num.items():
+    print( key , value )
+s = market(sahayal ='Kushwaha' , lahrapur ='lahrapur')
+
+
+
+
+
+def add(a=1 , b=1 , c = 1):
+  return a - b
+
+sum = add(b = 8 , c = 2)
+print(sum)
+
+
+
+
+
+
+
+a = lambda x , y : x + y
+print( a(2 , 3))
+
+s = lambda s: 'a' in s
+b = s('helloo')
+print(b)
+
+
+
+s = lambda a , b : a * b
+print(s(2 , 4))
+
+b = lambda a : "a" in a 
+print(b("hello"))
+
+b = lambda a : "a" in a 
+print(b("hello"))
+
+
+
+
+
+
+
+
+def transform(f , L ) :
+  output = []
+  for i in L :
+    output.append(f(i))
+
+  print(output)
+
+
+L = [ 1 , 2 ,3 , 4, 5]
+transform(lambda x :x**3 , L)
+
+
+
+
+def mul(f , L ) :
+  output = []
+  for i in L :
+    output.append(f(i))
+  print(output)
+
+L =[ 4 ,5 ,6, 7]
+mul(lambda x : x**4  , L)
+
+
+
+
+'''Map function  :'''
+a = list(map(lambda x : x**2 , [ 1 ,2 ,3 , 4,5]))
+print(a)
+
+
+'''filter '''
+L =  [ 1 ,2 , 3, 4 , 5]
+a = list(filter(lambda x:x>3 , L))
+print(a)
+
+
+s = set(map(lambda x : x**2 , { 1 ,2 , 4 ,5 }))
+print(s)
+
+s = tuple(map(lambda x : x/2  , ( 1 ,2 ,3 , 4, 5)))
+print(s)
